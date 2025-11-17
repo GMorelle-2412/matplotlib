@@ -1,11 +1,15 @@
 from pylab import*
 
-xlim(0,10)
-ylim(0,10)
+xlim(0,20)
+ylim(2,4)
 
-x=[2,5,8,2]
-y=[2,8,2,2]
+x=[5]
+y=[3]
 
-plot(x,y,linewidth=3,*'r')
+for i in range(5,15):
+    x.append(i)
+    y.append(3)
+
+plot(x,y,'*b')
 
 show()
